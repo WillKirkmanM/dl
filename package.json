@@ -1,6 +1,6 @@
 {
   "name": "@willkm/dl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Debug Logger Utility",
   "main": "dist/Client.js",
   "types": "dist/Client.d.ts",
