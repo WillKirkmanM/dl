@@ -1,6 +1,6 @@
 # [@WillKM/DL - A Debug Utility Tool](https://www.npmjs.com/package/@WillKirkmanM/DL)
 ![Image](Assets/preview.png)
-<p style="text-align: center;">A configurable, useful way to write debug log statements</p>
+<p style="text-align: center;">A Configurable, Useful Way to Write Debug Log Statements</p>
 
 ## Get Started
 ```javascript
