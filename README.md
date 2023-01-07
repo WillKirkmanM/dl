@@ -23,3 +23,4 @@ $ node index.js
 ```
 ## Why?
 I made this as I wanted to regulate what logs showed when providing different verbosity levels.
+
