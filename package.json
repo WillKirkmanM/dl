@@ -5,7 +5,7 @@
   "main": "dist/Client.js",
   "types": "dist/Client.d.ts",
   "scripts": {
-    "postIt": "tsc && npm pack && npm publish",
+    "postIt": "tsc && npm pack && npm publish"
   },
   "repository": {
     "type": "git",
