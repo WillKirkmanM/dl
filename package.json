@@ -1,9 +1,9 @@
 {
   "name": "@willkm/dl",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Debug Logger Utility",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/Client.js",
+  "types": "dist/Client.d.ts",
   "scripts": {
     "prePublish": "tsc"
   },
@@ -12,10 +12,11 @@
     "url": "git+https://github.com/WillKirkmanM/debug-logger.git"
   },
   "keywords": [
-    "debugger",
-    "utility"
+    "utility",
+    "logger",
+    "debug"
   ],
-  "author": "",
+  "author": "WillKirkmanM",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/WillKirkmanM/debug-logger/issues"
