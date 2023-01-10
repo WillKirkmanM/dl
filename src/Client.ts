@@ -5,7 +5,6 @@ export class DebugLogger {
   private enabled: boolean;
   private logLevel: number;
   private prefixMessage: string;
-  private prefixMessageEnabled?: boolean;
 
   constructor(options: IDebugLoggerOptions) {
     const { enabled, logLevel, prefixMessage, } = options;
