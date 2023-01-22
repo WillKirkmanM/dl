@@ -2,13 +2,13 @@ import IDebugLoggerOptions from "./Typings/Interfaces/IDebugLoggerOptions";
 
 export class DebugLogger {
   // Options
-  private enabled: boolean;
-  private logLevel: number;
-  private prefixMessage: string;
+  private readonly enabled: boolean;
+  private readonly logLevel: number;
+  private readonly prefixMessage: string;
 
   constructor(options: IDebugLoggerOptions) {
     const { enabled, logLevel, prefixMessage, } = options;
-    
+
     this.enabled = enabled;
     this.logLevel = logLevel;
     this.prefixMessage = prefixMessage;
