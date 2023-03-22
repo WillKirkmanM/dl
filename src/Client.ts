@@ -20,7 +20,7 @@ export class DebugLogger {
     if (this.logLevel >= logLevel) {
       let out: string = "";
 
-      out += this.prefixMessage + ""
+      out += this.prefixMessage + " "
 
       if (type) {
         out += `[${type}]` + " "
@@ -37,14 +37,14 @@ export class DebugLogger {
 
         let hours = today.getHours()
         let minutes = today.getMinutes()
-        let seconds = today.getUTCSeconds()
+        let seconds = today.getSeconds()
 
-        out += `${day}/${month}/${year} ${hours}:${minutes}:${seconds}` + " "
+        out += `${day}/${month}/${year} ${hours}:${minutes}:${seconds} -` + " "
 
-        out += message
-
-        return process.stdout.write(out + "\n");
       }
+
+      out += message
+      return process.stdout.write(out + "\n");
     }
   }
 }
