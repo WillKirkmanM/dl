@@ -14,14 +14,37 @@ export class DebugLogger {
     this.prefixMessage = prefixMessage;
 
     if (!this.enabled) return;
-  } 
-  
-  public log(logLevel: number, message: string, type?: string) {
+  }
+
+  public log(logLevel: number, message: string, type?: string, timestamp?: boolean) {
     if (this.logLevel >= logLevel) {
+      let out: string = "";
+
+      out += this.prefixMessage + ""
+
       if (type) {
-        return process.stdout.write(`${type} - ${message}\n`);
+        out += `[${type}]` + " "
       }
-      return process.stdout.write(`${this.prefixMessage}${message}\n`);
+
+      if (timestamp) {
+        // Date Time 
+        // 2023-03-22 19:07:55
+        let today = new Date()
+
+        let day = today.getDay()
+        let month = today.getMonth()
+        let year = today.getFullYear()
+
+        let hours = today.getHours()
+        let minutes = today.getMinutes()
+        let seconds = today.getUTCSeconds()
+
+        out += `${day}/${month}/${year} ${hours}:${minutes}:${seconds}` + " "
+
+        out += message
+
+        return process.stdout.write(out + "\n");
+      }
     }
   }
 }
